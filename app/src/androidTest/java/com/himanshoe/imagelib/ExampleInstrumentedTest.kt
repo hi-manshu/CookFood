@@ -1,4 +1,4 @@
-package com.himanshoe.cookfood
+package com.himanshoe.imagelib
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

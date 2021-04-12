@@ -1,4 +1,4 @@
-package com.himanshoe.cookfood
+package com.himanshoe.imagelib
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -1,16 +1,20 @@
 package com.himanshoe.core.base.ui
 
 import androidx.lifecycle.ViewModel
-import com.himanshoe.core.base.mvi.UiEffect
-import com.himanshoe.core.base.mvi.UiEvent
-import com.himanshoe.core.base.mvi.UiState
+import androidx.lifecycle.viewModelScope
+import com.himanshoe.core.base.mvi.MviEffect
+import com.himanshoe.core.base.mvi.MviEvent
+import com.himanshoe.core.base.mvi.MviState
+import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.launch
 
 
 /**
  * Created by Himanshu Singh on 12-04-2021.
  * hello2himanshusingh@gmail.com
  */
-abstract class BaseViewModel<Event : UiEvent, State : UiState, Effect : UiEffect> : ViewModel() {
+abstract class BaseViewModel<Event : MviEvent, State : MviState, Effect : MviEffect> : ViewModel() {
 
     private val initialState: State by lazy { createInitialState() }
     abstract fun createInitialState(): State

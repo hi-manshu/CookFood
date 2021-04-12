@@ -1,4 +1,4 @@
-package com.himanshoe.cookfood
+package com.himanshoe.imagelib
 
 import org.junit.Test
 
